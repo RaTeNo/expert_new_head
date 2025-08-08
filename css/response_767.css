@@ -1,0 +1,474 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 27px;
+        --font_size_title_small: 21px;
+    }
+
+
+
+    .bg_blue
+    {
+        padding: calc(var(--cont_padding) * 2) 0;
+    }
+
+
+    .bg_blue.negative_m
+    {
+        padding-bottom: 168px;
+    }
+
+
+
+    /*----------
+        More
+    ----------*/
+    .more
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        min-height: 160px;
+        padding: var(--cont_padding) 0 40px;
+    }
+
+
+    .page_head:after
+    {
+        bottom: -28px;
+        left: var(--cont_padding);
+
+        width: 52px;
+        height: 54px;
+    }
+
+
+    .page_head .bg
+    {
+        width: 100%;
+
+        transform: translateX(15%);
+    }
+
+
+    .page_head .bg:before
+    {
+        background: linear-gradient(90deg, #0084b9 0%, rgba(0, 132, 185, .65) 100%);
+    }
+
+
+    .page_head .bg:after
+    {
+        display: none;
+    }
+
+
+    .page_title
+    {
+        font-size: 34px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head,
+    .block_head.small_m,
+    .block_head.big_m,
+    .block_head.biggest_m
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .block_head .desc
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: calc(var(--cont_padding) * 2) 0;
+    }
+
+
+    .first_section .data
+    {
+        gap: 16px;
+    }
+
+
+    .first_section .data .title
+    {
+        font-size: 34px;
+    }
+
+
+    .first_section .data .desc
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*---------------------
+        What we offered
+    ---------------------*/
+    .what_we_offered .data
+    {
+        width: 100%;
+    }
+
+
+    .what_we_offered .video_link
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .cont
+    {
+        gap: 5px;
+    }
+
+
+    .error_page .icon img
+    {
+        width: 280px;
+    }
+
+
+    .error_page .link a
+    {
+        min-width: 156px;
+        padding: 10px 13px;
+    }
+
+
+
+    /*----------
+        Rate
+    ----------*/
+    .rate .item
+    {
+        padding: 20px;
+    }
+
+
+    .rate .item .logo
+    {
+        height: 30px;
+    }
+
+
+    .rate .item .stars img
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+
+    /*---------------------
+        Danville movers
+    ---------------------*/
+    .danville_movers .data
+    {
+        width: 100%;
+
+        gap: 16px;
+    }
+
+
+    .danville_movers .image
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*-----------------
+        Contacts us
+    -----------------*/
+    .contacts_us .info
+    {
+        width: 100%;
+    }
+
+
+    .contacts_us .feedback
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+        padding: 0;
+
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+
+
+    /*-------------------
+        Video reviews
+    -------------------*/
+    .video_reviews .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+
+    /*-------------
+        Reviews
+    --------------*/
+    .reviews .row
+    {
+        margin-left: 0;
+    }
+
+
+    .reviews .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .data
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .why_we .notice
+    {
+        flex-wrap: wrap;
+
+        margin-top: var(--cont_padding);
+
+        gap: var(--cont_padding);
+    }
+
+
+
+    /*-----------------
+        What expect
+    -----------------*/
+    .what_expect .block_head
+    {
+        width: 100%;
+    }
+
+
+    .what_expect .video_link
+    {
+        width: 100%;
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*----------------
+        What we do
+    ----------------*/
+    .what_we_do .data
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .what_we_do .row
+    {
+        margin-left: 0;
+    }
+
+
+    .what_we_do .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -.5);
+        margin-left: calc(var(--cont_padding) * -.5);
+
+        --gap: 12px;
+    }
+
+
+    .gallery .row > *
+    {
+        width: calc(33.333% - var(--cont_padding) / 2);
+        margin-bottom: calc(var(--cont_padding) / 2);
+        margin-left: calc(var(--cont_padding) / 2);
+    }
+
+
+    .gallery .item .thumb
+    {
+        height: 100px;
+    }
+
+    .gallery .item .thumb.hx2
+    {
+        height: 212px;
+    }
+
+    .gallery .item .thumb.hx3
+    {
+        height: 324px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .cont
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    footer .bottom .cont
+    {
+        gap: 12px;
+    }
+
+
+    footer .get_btn
+    {
+        width: 140px;
+        padding: 10px 13px;
+    }
+
+
+    footer .row
+    {
+        margin-left: 0;
+    }
+
+
+    footer .row .col,
+    footer .row .col.big_w
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    footer .links .items,
+    footer .links .items.columns
+    {
+        display: block;
+
+        column-gap: var(--cont_padding);
+        column-count: 2;
+    }
+
+
+    footer .links .items > * + *,
+    footer .links .items.columns > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    footer .title
+    {
+        font-size: 16px;
+    }
+
+
+    footer .work_time .items
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    footer .work_time .items > *
+    {
+        display: flex;
+        flex-direction: column;
+
+        width: calc(50% - var(--cont_padding) / 2);
+
+        gap: 4px;
+    }
+
+
+    footer .copyright
+    {
+        gap: 12px;
+    }
+
+
+    footer .location
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 400px;
+
+        background: var(--bg);
+    }
+
+
+    .modal .data
+    {
+        width: 100%;
+    }
+
+
+
+    .modal .image
+    {
+        display: none;
+    }
+}

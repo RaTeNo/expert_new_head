@@ -1,0 +1,600 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 32px;
+        --font_size_title_small: 22px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        left: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 72px 0 0;
+
+        transition: transform .3s linear;
+    }
+
+    header.show
+    {
+        transform: translateX(100%);
+    }
+
+
+    header .cont
+    {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+
+        gap: var(--cont_padding);
+    }
+
+
+    header .top,
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .data
+    {
+        flex: 1 0 auto;
+    }
+
+
+    header .menu
+    {
+        width: 100%;
+
+        gap: 30px;
+    }
+
+
+    header .menu_item
+    {
+        width: 100%;
+    }
+
+
+    header .menu_item > a
+    {
+        font-weight: 600;
+
+        padding-left: 18px;
+    }
+
+
+    header .menu_item > a .arr
+    {
+        display: block;
+    }
+
+
+    header .get_btn
+    {
+        width: 100%;
+        margin-top: auto;
+        padding: 12px 20px;
+
+        color: #fff;
+        background: var(--bg_btn);
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        min-height: 200px;
+    }
+
+
+    .page_head .cont
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .page_head:after
+    {
+        bottom: -36px;
+
+        width: 72px;
+        height: 74px;
+    }
+
+
+    .page_head .bg
+    {
+        width: 55%;
+    }
+
+
+    .page_title
+    {
+        font-size: 44px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block blockquote
+    {
+        font-size: 16px;
+
+        padding: 16px var(--cont_padding);
+    }
+
+
+    .text_block blockquote:after
+    {
+        font-size: 60px;
+        line-height: 80px;
+
+        top: -24px;
+        right: -12px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 60px 0;
+    }
+
+
+    .first_section .data
+    {
+        width: 100%;
+    }
+
+
+    .first_section .data .title
+    {
+        font-size: 44px;
+    }
+
+
+    .first_section .data .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .first_section .data .phone
+    {
+        margin-top: 12px;
+    }
+
+
+    .first_section .data .phone a
+    {
+        font-size: 16px;
+
+        height: 40px;
+        padding: 0 16px 0 64px;
+    }
+
+
+    .first_section .data .phone a .icon
+    {
+        width: 51px;
+        height: 44px;
+        padding-right: 5px;
+    }
+
+
+    .first_section .data .phone a .icon svg
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .first_section .feedback
+    {
+        width: 100%;
+        margin-top: calc(var(--cont_padding) * 2);
+    }
+
+
+
+    /*---------------------
+        What we offered
+    ---------------------*/
+    .what_we_offered .data
+    {
+        width: 300px;
+    }
+
+
+    .what_we_offered .video_link
+    {
+        width: calc(100% - 348px);
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page
+    {
+        padding: 80px 0;
+    }
+
+
+
+    /*----------
+        Rate
+    ----------*/
+    .rate .data
+    {
+        flex-wrap: wrap;
+    }
+
+
+    .rate .item
+    {
+        width: 50%;
+    }
+
+
+    .rate .item:nth-child(2n) ~ .item
+    {
+        border-top: 1px solid #e6f0f8;
+    }
+
+
+    .rate .item:nth-child(2n+1)
+    {
+        border-left: none;
+    }
+
+
+
+    /*---------------------
+        Danville movers
+    ---------------------*/
+    .danville_movers .image
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+
+    /*-----------------
+        Contacts us
+    -----------------*/
+    .contacts_us .data
+    {
+        padding: calc(var(--cont_padding));
+    }
+
+
+    .contacts_us .info
+    {
+        width: calc(100% - 344px);
+    }
+
+
+    .contacts_us .phone
+    {
+        margin-bottom: -16px;
+        margin-left: -12px;
+    }
+
+
+    .contacts_us .phone a
+    {
+        font-size: 16px;
+
+        height: 40px;
+        padding: 0 16px 0 64px;
+    }
+
+
+    .contacts_us .phone a .icon
+    {
+        width: 51px;
+        height: 44px;
+        padding-right: 5px;
+    }
+
+
+    .contacts_us .phone a .icon svg
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .contacts_us .feedback
+    {
+        width: 320px;
+        padding: var(--cont_padding);
+    }
+
+
+
+    /*-------------
+        Reviews
+    --------------*/
+    .reviews .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .row > *
+    {
+        width: calc(50% + 1px);
+    }
+
+
+    .why_we .item:first-child
+    {
+        border-bottom-left-radius: 0;
+    }
+
+    .why_we .item:nth-child(2)
+    {
+        border-top-right-radius: 20px;
+    }
+
+    .why_we .item:nth-last-child(2)
+    {
+        border-bottom-left-radius: 20px;
+    }
+
+    .why_we .item:last-child
+    {
+        border-top-right-radius: 0;
+    }
+
+
+
+    /*----------
+        Pros
+    ----------*/
+    .pros
+    {
+        padding: calc(var(--cont_padding) * 2) 0 409px;
+    }
+
+
+    .pros .data
+    {
+        width: 100%;
+    }
+
+
+    .pros .item
+    {
+        padding: calc(var(--cont_padding) - 1px);
+    }
+
+
+    .pros .image
+    {
+        right: auto;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+
+    .pros .image img
+    {
+        width: auto;
+        height: 430px;
+    }
+
+
+    .pros:after
+    {
+        width: 100%;
+        height: 362px;
+    }
+
+
+    .pros .bg2
+    {
+        top: auto;
+        right: 50%;
+        bottom: -160px;
+
+        transform: translateX(50%);
+    }
+
+
+
+    /*-----------------
+        What expect
+    -----------------*/
+    .what_expect .block_head
+    {
+        width: 300px;
+    }
+
+
+    .what_expect .video_link
+    {
+        width: calc(100% - 348px);
+    }
+
+
+
+    /*----------------
+        What we do
+    ----------------*/
+    .what_we_do .row
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .what_we_do .row > *
+    {
+        width: calc(50% - var(--cont_padding));
+        margin-bottom: var(--cont_padding);
+        margin-left: var(--cont_padding);
+    }
+
+
+    .what_we_do .bottom
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .what_we_do .bottom .text_block.big_w
+    {
+        flex: auto;
+
+        width: 100%;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .item .thumb
+    {
+        height: 124px;
+    }
+
+    .gallery .item .thumb.hx2
+    {
+        height: 272px;
+    }
+
+    .gallery .item .thumb.hx3
+    {
+        height: 420px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: 30px;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: var(--cont_padding);
+        padding-top: var(--cont_padding);
+    }
+
+
+    footer .logo img
+    {
+        width: 131px;
+        height: 25px;
+    }
+
+
+    footer .row .col,
+    footer .row .col.big_w
+    {
+        width: calc(25% - var(--cont_padding));
+    }
+
+
+    footer .links .items.columns
+    {
+        display: flex;
+
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+    footer .get_btn
+    {
+        width: 162px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 720px;
+        padding: 40px;
+    }
+
+
+    .modal .data
+    {
+        width: 324px;
+    }
+
+
+
+    .modal .image
+    {
+        right: -68px;
+    }
+
+
+    .modal .image img
+    {
+        width: 424px;
+        height: 496px;
+    }
+}

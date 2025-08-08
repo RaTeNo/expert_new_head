@@ -1,0 +1,322 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 22px;
+        --font_size_title_small: 18px;
+    }
+
+
+
+    .block,
+    .block.big_m,
+    .block.biggest_m
+    {
+        margin-bottom: 48px;
+    }
+
+
+
+    /*----------
+        More
+    ----------*/
+    .more
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+    .more .btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        min-height: 133px;
+        padding: 20px 0 32px;
+    }
+
+
+    .page_head:after
+    {
+        bottom: -20px;
+
+        width: 39px;
+        height: 40px;
+    }
+
+
+    .page_head .cont
+    {
+        gap: 16px;
+    }
+
+
+    .page_title
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .data .title
+    {
+        font-size: 24px;
+    }
+
+
+    .first_section .data .desc
+    {
+        font-size: 14px;
+    }
+
+
+    .first_section .feedback
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page .icon img
+    {
+        width: 240px;
+    }
+
+
+
+    /*----------
+        Rate
+    ----------*/
+    .rate .item
+    {
+        padding: 18px;
+    }
+
+
+    .rate .item .logo
+    {
+        height: 27px;
+    }
+
+
+    .rate .item .stars img
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+    .rate .item .name
+    {
+        font-size: 13px;
+    }
+
+
+    .rate .item .name br
+    {
+        display: block;
+    }
+
+
+
+    /*-------------------
+        Video reviews
+    -------------------*/
+    .video_reviews .row
+    {
+        margin-left: 0;
+    }
+
+
+    .video_reviews .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Reviews
+    --------------*/
+    .reviews .review .author
+    {
+        padding: 20px var(--cont_padding);
+    }
+
+
+    .reviews .review .photo
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .reviews .review .photo + *
+    {
+        width: calc(100% - 76px);
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .row
+    {
+        margin-left: 0;
+    }
+
+
+    .why_we .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .why_we .item:first-child
+    {
+        border-top-right-radius: 20px;
+    }
+
+    .why_we .item:nth-child(2)
+    {
+        border-top-right-radius: 0;
+    }
+
+    .why_we .item:nth-last-child(2)
+    {
+        border-bottom-left-radius: 0;
+    }
+
+    .why_we .item:last-child
+    {
+        border-bottom-left-radius: 20px;
+    }
+
+
+
+    /*----------
+        Pros
+    ----------*/
+    .pros .row
+    {
+        margin-left: 0;
+    }
+
+
+    .pros .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .row > *
+    {
+        width: calc(50% - var(--cont_padding) / 2);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 30px 0;
+    }
+
+
+    footer .bottom
+    {
+        font-size: 11px;
+    }
+
+
+    footer .col_left
+    {
+        gap: 13px;
+    }
+
+
+    footer .col_right
+    {
+        gap: 12px;
+    }
+
+
+    footer .text br
+    {
+        display: block;
+    }
+
+
+    footer .get_btn
+    {
+        width: 132px;
+    }
+
+
+    footer .links .items
+    {
+        font-size: 11px;
+    }
+
+
+    footer .work_time .items
+    {
+        font-size: 11px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: var(--cont_padding);
+    }
+
+    .first_section .bg img
+    {
+        display: block;
+        height: auto;
+
+    }
+
+    .first_section:after{        
+        background: linear-gradient(180deg, rgba(1, 127, 177, 0.3) 0.62%, #017FB1 26.58%);
+    }
+
+    .first_section .bg video
+    {
+        display: none;
+    }
+
+    .first_section{
+        padding-top: 100px;
+    }
+}

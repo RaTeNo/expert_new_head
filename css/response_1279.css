@@ -1,0 +1,598 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 36px;
+        --font_size_title_small: 24px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .bg_blue
+    {
+        padding: 60px 0;
+    }
+
+    .bg_blue.negative_m
+    {
+        padding-bottom: 180px;
+    }
+
+
+    .block.small_m
+    {
+        margin-bottom: calc(var(--cont_padding) * 2);
+    }
+
+    .block.big_m
+    {
+        margin-bottom: 60px;
+    }
+
+    .block.biggest_m
+    {
+        margin-bottom: 80px;
+    }
+
+    .block.negative_m
+    {
+        margin-bottom: -100px;
+    }
+
+
+
+    /*----------
+        More
+    ----------*/
+    .more
+    {
+        margin-top: 40px;
+    }
+
+
+    .more .btn
+    {
+        padding: 12px 20px;
+
+        box-shadow: 0 4px var(--cont_padding) 0 rgba(0, 0, 0, .05);
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .text
+    {
+        font-size: 13px;
+    }
+
+
+    header .menu
+    {
+        gap: 48px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        min-height: 240px;
+    }
+
+
+    .page_head:after
+    {
+        bottom: -40px;
+        left: 0;
+
+        width: 80px;
+        height: 84px;
+        margin-left: 0;
+    }
+
+
+    .page_head .bg
+    {
+        right: 0;
+
+        margin-right: 0;
+    }
+
+
+    .page_title
+    {
+        font-size: 52px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+    .block_head.big_m,
+    .block_head.biggest_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .text_block blockquote
+    {
+        font-size: 18px;
+
+        margin-top: 12px;
+        margin-bottom: 28px;
+        padding: 20px var(--cont_padding);
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 80px 0;
+    }
+
+
+    .first_section .data
+    {
+        width: 572px;
+    }
+
+
+    .first_section .data .title
+    {
+        font-size: 52px;
+    }
+
+
+    .first_section .data .desc
+    {
+        font-size: 24px;
+    }
+
+
+    .first_section .data .phone
+    {
+        margin-top: calc(var(--cont_padding) * 2);
+    }
+
+
+    .first_section .data .phone a
+    {
+        font-size: 18px;
+
+        height: 48px;
+    }
+
+
+    .first_section .data .phone a .icon
+    {
+        width: 69px;
+        height: 56px;
+        padding-right: 7px;
+
+        filter: drop-shadow(0px 4px var(--cont_padding) rgba(0, 0, 0, .05));
+    }
+
+
+    .first_section .data .phone a .icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .first_section .feedback
+    {
+        width: 340px;
+        padding: var(--cont_padding) 10px 10px 10px;
+    }
+
+
+    .first_section .feedback .title
+    {
+        margin-bottom: var(--cont_padding);
+    }
+
+
+    .first_section .feedback .form
+    {
+        padding: var(--cont_padding);
+    }
+
+
+
+    /*---------------------
+        What we offered
+    ---------------------*/
+    .what_we_offered .link
+    {
+        margin-top: var(--cont_padding);
+    }
+
+
+    .what_we_offered .link .btn
+    {
+        padding: 12px 20px;
+    }
+
+
+
+    /*----------------
+        Error page
+    ----------------*/
+    .error_page
+    {
+        padding: 60px 0;
+    }
+
+
+    .error_page .icon img
+    {
+        width: 320px;
+    }
+
+
+    .error_page .link a
+    {
+        min-width: 160px;
+        padding: 12px;
+    }
+
+
+
+    /*----------
+        Rate
+    ----------*/
+    .rate .data
+    {
+        box-shadow: 0 4px var(--cont_padding) 0 rgba(0, 0, 0, .05);
+    }
+
+
+
+    /*---------------------
+        Danville movers
+    ---------------------*/
+    .danville_movers .data
+    {
+        width: 50%;
+
+        gap: var(--cont_padding);
+    }
+
+
+
+    /*-----------------
+        Contacts us
+    -----------------*/
+    .contacts_us .data
+    {
+        padding: calc(var(--cont_padding) * 2);
+
+        box-shadow: 0 4px var(--cont_padding) 0 rgba(0, 0, 0, .05);
+    }
+
+
+    .contacts_us .info
+    {
+        width: calc(100% - 416px);
+    }
+
+
+    .contacts_us .phone
+    {
+        margin-bottom: calc(var(--cont_padding) * -1);
+        margin-left: calc(var(--cont_padding) * -1);
+    }
+
+
+    .contacts_us .phone a
+    {
+        font-size: 18px;
+
+        height: 48px;
+    }
+
+
+    .contacts_us .phone a .icon
+    {
+        width: 69px;
+        height: 56px;
+        padding-right: 7px;
+
+        filter: drop-shadow(0px 4px var(--cont_padding) rgba(0, 0, 0, .05));
+    }
+
+
+    .contacts_us .phone a .icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .contacts_us .feedback
+    {
+        width: 368px;
+        padding: var(--cont_padding) 40px 40px;
+
+        box-shadow: 0 4px var(--cont_padding) 0 rgba(0, 0, 0, .05);
+    }
+
+
+    .contacts_us .feedback .title
+    {
+        margin-bottom: var(--cont_padding);
+    }
+
+
+
+    /*-------------
+        Reviews
+    --------------*/
+    .reviews .review .author,
+    .reviews .review .info
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .reviews .review .photo
+    {
+        width: 72px;
+        height: 72px;
+
+        background-size: 75% auto;
+    }
+
+
+    .reviews .review .photo + *
+    {
+        width: calc(100% - 92px);
+    }
+
+
+
+    /*------------
+        Why we
+    ------------*/
+    .why_we .data
+    {
+        padding: calc(var(--cont_padding) * 2);
+
+        box-shadow: 0 4px var(--cont_padding) 0 rgba(0, 0, 0, .05);
+    }
+
+
+    .why_we .item
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .why_we .notice
+    {
+        gap: calc(var(--cont_padding) * 2);
+    }
+
+
+
+    /*----------
+        Pros
+    ----------*/
+    .pros
+    {
+        padding: 60px 0;
+    }
+
+
+    .pros .data
+    {
+        width: calc(66.666% - 40px);
+    }
+
+
+    .pros .item
+    {
+        padding: calc(var(--cont_padding) - 1px);
+    }
+
+
+    .pros .item .name:before
+    {
+        left: calc((var(--cont_padding) + 1px) * -1);
+    }
+
+
+    .pros .image
+    {
+        right: calc(var(--cont_padding) * -2);
+
+        margin-right: 0;
+    }
+
+
+    .pros .image img
+    {
+        width: 486px;
+        height: 568px;
+    }
+
+
+    .pros:after
+    {
+        right: 0;
+        left: auto;
+
+        width: 33.333vw;
+        min-width: 0;
+        margin-left: 0;
+    }
+
+
+    .pros .bg
+    {
+        display: none;
+    }
+
+
+    .pros .bg2
+    {
+        top: -100px;
+        right: 0;
+
+        margin-right: 0;
+    }
+
+
+    .pros .bg2 img
+    {
+        width: 576px;
+        height: 707px;
+    }
+
+
+
+    /*----------------
+        What we do
+    ----------------*/
+    .what_we_do .data
+    {
+        padding: calc(var(--cont_padding) * 2);
+
+        box-shadow: 0 4px var(--cont_padding) 0 rgba(0, 0, 0, .05);
+    }
+
+
+    .what_we_do .item .info
+    {
+        padding: var(--cont_padding) calc(var(--cont_padding) - 1px) calc(var(--cont_padding) - 1px);
+    }
+
+
+    .what_we_do .bottom
+    {
+        gap: 40px;
+    }
+
+
+
+    /*-------------
+        Success
+    -------------*/
+    .success
+    {
+        gap: 12px;
+    }
+
+
+    .success .icon
+    {
+        width: 72px;
+        height: 72px;
+        margin-bottom: var(--cont_padding);
+    }
+
+
+    .success .btn
+    {
+        margin-top: 12px;
+        padding: 12px 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .get_btn
+    {
+        width: 176px;
+        padding: 12px;
+    }
+
+
+    footer .links .items.columns
+    {
+        column-gap: var(--cont_padding);
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 800px;
+        padding: calc(var(--cont_padding) * 2);
+
+        box-shadow: 0 4px var(--cont_padding) 0 rgba(0, 0, 0, .05);
+    }
+
+
+    .modal .data
+    {
+        width: 360px;
+    }
+
+
+    .modal_title
+    {
+        margin-bottom: var(--cont_padding);
+    }
+
+
+
+    .modal .image
+    {
+        right: -68px;
+    }
+
+
+    .modal .image img
+    {
+        width: 480px;
+        height: 560px;
+    }
+}
